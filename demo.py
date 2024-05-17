@@ -22,11 +22,12 @@ gray = (200, 200, 200)
 # Initialize font module
 pygame.font.init()
 font = pygame.font.Font(None, 36)
+path = str(os.getcwd())
 
 # Emotion to MP3 file mapping
 emotion_to_mp3 = {
-    'happy': '/Users/cuveeoc/Desktop/happy.mp3',
-    'sad': '/Users/cuveeoc/Desktop/sad.mp3',
+    'happy': path + '/happy.mp3',
+    'sad': path + '/sad.mp3',
 }
 
 def play_music(emotion):
